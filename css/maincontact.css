@@ -1,0 +1,46 @@
+.main-content {
+    margin: 40px 10%;
+    padding: 20px;
+    grid-area: maincontent;
+    display: grid;
+    column-gap: 20px;
+    justify-content:center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'contactform image';	
+}
+
+.contact-form {
+    grid-area: contactform;
+    width: 80%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.map {
+    grid-area: image;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 790px) {
+    .main-content {
+    margin: 20px 10%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    'contactform'
+     'image';
+    }
+
+    .map {
+        grid-area: image;
+        width: 100%;
+        min-width: 300px;
+        height: auto;
+        text-align: center;
+    }
+}

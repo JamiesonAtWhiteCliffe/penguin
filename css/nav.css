@@ -1,0 +1,70 @@
+.navbar {
+  display:flex;
+  justify-content:center;
+  justify-items: center;
+  align-items: center;
+}
+.nav-item {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+  padding: 10px;
+  width: 80px;
+  background-color: #dddddd;
+}
+
+.nav-item {
+  float: center;
+}
+
+
+
+.menu-link {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+.menu-link:hover {
+  background-color: #555;
+  color: white;
+}
+
+.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.logo-item {
+  list-style: none;
+  margin-right: 10px;
+}
+
+.logo {
+  width: 80px;
+  height: 53px;
+  margin-top: 5px;
+ 
+}
+
+
+@media screen and (max-width: 790px)
+{
+  .nav-item {
+    list-style: none;
+    margin: 0;
+    flex-grow: 1;
+    padding: 5px;
+    width: 60px;
+    background-color: #dddddd;
+  }
+}

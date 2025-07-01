@@ -1,0 +1,37 @@
+
+.container
+{
+    background-color: #800080;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5;
+    grid-template-areas: 
+    'nav'
+    'header'
+    'maincontent'
+    'footer';
+}
+
+.navbar {
+    grid-area: nav;
+}
+
+h1 {
+    grid-area: header;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
